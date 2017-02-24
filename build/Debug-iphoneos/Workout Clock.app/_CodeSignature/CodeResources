@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		YqWbEoYtXaKdAHAVRjmtXeQ/zCw=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		tqbH2hSJnLy0A2jc5BRb8sxXPb8=
@@ -18,7 +22,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		psbXycicP/LBQNPAdR5/uoM2QNE=
+		3bJZ0nwXcJHt+8shw9AVl9YyFbs=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		aD/saZLN9KG5uBriPVLWaxTwPiY=
+		fbzPIyJCc2y1xF/JHF0Twnt8rx0=
 		</data>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
 		<data>
@@ -82,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p7rkZS7uDEI+DckDa+gIH3gOBAw=
+		Ikrf1qCRcTXvtGoS3Cz8DnHn/RI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -99,6 +103,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YqWbEoYtXaKdAHAVRjmtXeQ/zCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Nnkji1eH5z0ybLhaE47caC+S3RA13vVfRChLXieqwnI=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -136,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			psbXycicP/LBQNPAdR5/uoM2QNE=
+			3bJZ0nwXcJHt+8shw9AVl9YyFbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7n6MMrIn9eXtOdOZ8zqEE+hiiaYVWhV/6X/d0oYYDYk=
+			RJnOhhbjdnOcdBAC6xTyTSmvQr/uOUfhgyAvS01npi4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -158,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aD/saZLN9KG5uBriPVLWaxTwPiY=
+			fbzPIyJCc2y1xF/JHF0Twnt8rx0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EJ91DY+r4qfBIuxLk6Ndql5BxGLi9BpgGQ1WtQ8iqTs=
+			x/in2tJ416gT7j1e/DTox+mszCrzPQBJ+pw4g+uLucY=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>

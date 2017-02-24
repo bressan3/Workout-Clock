@@ -512,6 +512,7 @@
 				A050EDB81E5FC535000C9735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A050EDB91E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				A050EDBB1E5FC535000C9735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A050EDBC1E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout ClockUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				A050EDBE1E5FC535000C9735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

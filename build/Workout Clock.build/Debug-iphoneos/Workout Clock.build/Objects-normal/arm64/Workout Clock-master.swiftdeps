@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "88bb8ff640096b9e934c6bd6db60ef3c"
-build_time: [541261666, 494266000]
+build_time: [541278246, 237492000]
 inputs:
-  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/ViewController.swift": [541261662, 0]
+  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/ViewController.swift": [541278240, 0]
   "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/AppDelegate.swift": [541215285, 0]
