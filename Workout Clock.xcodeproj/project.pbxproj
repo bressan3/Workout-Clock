@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A050ED921E5FC535000C9735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050ED911E5FC535000C9735 /* AppDelegate.swift */; };
+		A050ED941E5FC535000C9735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050ED931E5FC535000C9735 /* ViewController.swift */; };
+		A050ED971E5FC535000C9735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A050ED951E5FC535000C9735 /* Main.storyboard */; };
+		A050ED991E5FC535000C9735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A050ED981E5FC535000C9735 /* Assets.xcassets */; };
+		A050ED9C1E5FC535000C9735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A050ED9A1E5FC535000C9735 /* LaunchScreen.storyboard */; };
+		A050EDA71E5FC535000C9735 /* Workout_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050EDA61E5FC535000C9735 /* Workout_ClockTests.swift */; };
+		A050EDB21E5FC535000C9735 /* Workout_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A050EDB11E5FC535000C9735 /* Workout_ClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A050EDA31E5FC535000C9735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A050ED861E5FC535000C9735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A050ED8D1E5FC535000C9735;
+			remoteInfo = "Workout Clock";
+		};
+		A050EDAE1E5FC535000C9735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A050ED861E5FC535000C9735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A050ED8D1E5FC535000C9735;
+			remoteInfo = "Workout Clock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A050ED8E1E5FC535000C9735 /* Workout Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A050ED911E5FC535000C9735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A050ED931E5FC535000C9735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A050ED961E5FC535000C9735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A050ED981E5FC535000C9735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A050ED9B1E5FC535000C9735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A050ED9D1E5FC535000C9735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A050EDA21E5FC535000C9735 /* Workout ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A050EDA61E5FC535000C9735 /* Workout_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_ClockTests.swift; sourceTree = "<group>"; };
+		A050EDA81E5FC535000C9735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A050EDAD1E5FC535000C9735 /* Workout ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A050EDB11E5FC535000C9735 /* Workout_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_ClockUITests.swift; sourceTree = "<group>"; };
+		A050EDB31E5FC535000C9735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A050ED8B1E5FC535000C9735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A050ED9F1E5FC535000C9735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A050EDAA1E5FC535000C9735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A050ED851E5FC535000C9735 = {
+			isa = PBXGroup;
+			children = (
+				A050ED901E5FC535000C9735 /* Workout Clock */,
+				A050EDA51E5FC535000C9735 /* Workout ClockTests */,
+				A050EDB01E5FC535000C9735 /* Workout ClockUITests */,
+				A050ED8F1E5FC535000C9735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A050ED8F1E5FC535000C9735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A050ED8E1E5FC535000C9735 /* Workout Clock.app */,
+				A050EDA21E5FC535000C9735 /* Workout ClockTests.xctest */,
+				A050EDAD1E5FC535000C9735 /* Workout ClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A050ED901E5FC535000C9735 /* Workout Clock */ = {
+			isa = PBXGroup;
+			children = (
+				A050ED911E5FC535000C9735 /* AppDelegate.swift */,
+				A050ED931E5FC535000C9735 /* ViewController.swift */,
+				A050ED951E5FC535000C9735 /* Main.storyboard */,
+				A050ED981E5FC535000C9735 /* Assets.xcassets */,
+				A050ED9A1E5FC535000C9735 /* LaunchScreen.storyboard */,
+				A050ED9D1E5FC535000C9735 /* Info.plist */,
+			);
+			path = "Workout Clock";
+			sourceTree = "<group>";
+		};
+		A050EDA51E5FC535000C9735 /* Workout ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				A050EDA61E5FC535000C9735 /* Workout_ClockTests.swift */,
+				A050EDA81E5FC535000C9735 /* Info.plist */,
+			);
+			path = "Workout ClockTests";
+			sourceTree = "<group>";
+		};
+		A050EDB01E5FC535000C9735 /* Workout ClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A050EDB11E5FC535000C9735 /* Workout_ClockUITests.swift */,
+				A050EDB31E5FC535000C9735 /* Info.plist */,
+			);
+			path = "Workout ClockUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A050ED8D1E5FC535000C9735 /* Workout Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A050EDB61E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout Clock" */;
+			buildPhases = (
+				A050ED8A1E5FC535000C9735 /* Sources */,
+				A050ED8B1E5FC535000C9735 /* Frameworks */,
+				A050ED8C1E5FC535000C9735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Workout Clock";
+			productName = "Workout Clock";
+			productReference = A050ED8E1E5FC535000C9735 /* Workout Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A050EDA11E5FC535000C9735 /* Workout ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A050EDB91E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout ClockTests" */;
+			buildPhases = (
+				A050ED9E1E5FC535000C9735 /* Sources */,
+				A050ED9F1E5FC535000C9735 /* Frameworks */,
+				A050EDA01E5FC535000C9735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A050EDA41E5FC535000C9735 /* PBXTargetDependency */,
+			);
+			name = "Workout ClockTests";
+			productName = "Workout ClockTests";
+			productReference = A050EDA21E5FC535000C9735 /* Workout ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A050EDAC1E5FC535000C9735 /* Workout ClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A050EDBC1E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout ClockUITests" */;
+			buildPhases = (
+				A050EDA91E5FC535000C9735 /* Sources */,
+				A050EDAA1E5FC535000C9735 /* Frameworks */,
+				A050EDAB1E5FC535000C9735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A050EDAF1E5FC535000C9735 /* PBXTargetDependency */,
+			);
+			name = "Workout ClockUITests";
+			productName = "Workout ClockUITests";
+			productReference = A050EDAD1E5FC535000C9735 /* Workout ClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A050ED861E5FC535000C9735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Lucas Bressan";
+				TargetAttributes = {
+					A050ED8D1E5FC535000C9735 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GDZUM8KAXE;
+						ProvisioningStyle = Automatic;
+					};
+					A050EDA11E5FC535000C9735 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GDZUM8KAXE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A050ED8D1E5FC535000C9735;
+					};
+					A050EDAC1E5FC535000C9735 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GDZUM8KAXE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A050ED8D1E5FC535000C9735;
+					};
+				};
+			};
+			buildConfigurationList = A050ED891E5FC535000C9735 /* Build configuration list for PBXProject "Workout Clock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A050ED851E5FC535000C9735;
+			productRefGroup = A050ED8F1E5FC535000C9735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A050ED8D1E5FC535000C9735 /* Workout Clock */,
+				A050EDA11E5FC535000C9735 /* Workout ClockTests */,
+				A050EDAC1E5FC535000C9735 /* Workout ClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A050ED8C1E5FC535000C9735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A050ED9C1E5FC535000C9735 /* LaunchScreen.storyboard in Resources */,
+				A050ED991E5FC535000C9735 /* Assets.xcassets in Resources */,
+				A050ED971E5FC535000C9735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A050EDA01E5FC535000C9735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A050EDAB1E5FC535000C9735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A050ED8A1E5FC535000C9735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A050ED941E5FC535000C9735 /* ViewController.swift in Sources */,
+				A050ED921E5FC535000C9735 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A050ED9E1E5FC535000C9735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A050EDA71E5FC535000C9735 /* Workout_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A050EDA91E5FC535000C9735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A050EDB21E5FC535000C9735 /* Workout_ClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A050EDA41E5FC535000C9735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A050ED8D1E5FC535000C9735 /* Workout Clock */;
+			targetProxy = A050EDA31E5FC535000C9735 /* PBXContainerItemProxy */;
+		};
+		A050EDAF1E5FC535000C9735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A050ED8D1E5FC535000C9735 /* Workout Clock */;
+			targetProxy = A050EDAE1E5FC535000C9735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A050ED951E5FC535000C9735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A050ED961E5FC535000C9735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A050ED9A1E5FC535000C9735 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A050ED9B1E5FC535000C9735 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A050EDB41E5FC535000C9735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A050EDB51E5FC535000C9735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A050EDB71E5FC535000C9735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GDZUM8KAXE;
+				INFOPLIST_FILE = "Workout Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lucasbressan.Workout-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A050EDB81E5FC535000C9735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GDZUM8KAXE;
+				INFOPLIST_FILE = "Workout Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lucasbressan.Workout-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A050EDBA1E5FC535000C9735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GDZUM8KAXE;
+				INFOPLIST_FILE = "Workout ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lucasbressan.Workout-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout Clock.app/Workout Clock";
+			};
+			name = Debug;
+		};
+		A050EDBB1E5FC535000C9735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GDZUM8KAXE;
+				INFOPLIST_FILE = "Workout ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lucasbressan.Workout-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout Clock.app/Workout Clock";
+			};
+			name = Release;
+		};
+		A050EDBD1E5FC535000C9735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GDZUM8KAXE;
+				INFOPLIST_FILE = "Workout ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lucasbressan.Workout-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Workout Clock";
+			};
+			name = Debug;
+		};
+		A050EDBE1E5FC535000C9735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GDZUM8KAXE;
+				INFOPLIST_FILE = "Workout ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lucasbressan.Workout-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Workout Clock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A050ED891E5FC535000C9735 /* Build configuration list for PBXProject "Workout Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A050EDB41E5FC535000C9735 /* Debug */,
+				A050EDB51E5FC535000C9735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A050EDB61E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A050EDB71E5FC535000C9735 /* Debug */,
+				A050EDB81E5FC535000C9735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A050EDB91E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A050EDBA1E5FC535000C9735 /* Debug */,
+				A050EDBB1E5FC535000C9735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A050EDBC1E5FC535000C9735 /* Build configuration list for PBXNativeTarget "Workout ClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A050EDBD1E5FC535000C9735 /* Debug */,
+				A050EDBE1E5FC535000C9735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A050ED861E5FC535000C9735 /* Project object */;
+}
