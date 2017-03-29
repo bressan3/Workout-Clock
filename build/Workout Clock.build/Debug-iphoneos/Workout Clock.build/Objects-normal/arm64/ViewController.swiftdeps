@@ -6,65 +6,68 @@ provides-nominal:
 provides-member:
 - ["C13Workout_Clock14ViewController", ""]
 provides-dynamic-lookup:
-- "stopCountdown"
+- "dismissKeyboard"
+- "userCalendar"
+- "startTime"
+- "resumeButton"
+- "timePaused"
+- "startCountdown"
+- "timer"
 - "clockLabel"
-- "formatter"
+- "stopButton"
+- "timeIntervalInput"
 - "viewDidLoad"
+- "formatter"
+- "navigationBar"
+- "totalTimeInput"
+- "stopCountdown"
+- "pauseCountdown"
+- "totalTimeLabel"
+- "pauseButton"
+- "resumeCountdown"
+- "endTime"
+- "didReceiveMemoryWarning"
+- "startButton"
+- "toolbar"
 - "playSound"
 - "timeIntervalLabel"
-- "timer"
-- "pauseButton"
-- "pauseCountdown"
-- "didReceiveMemoryWarning"
-- "resumeCountdown"
-- "totalTimeLabel"
-- "timePaused"
-- "startButton"
-- "userCalendar"
-- "dismissKeyboard"
-- "timeIntervalInput"
-- "endTime"
-- "startTime"
-- "stopButton"
-- "totalTimeInput"
 - "printTime"
-- "startCountdown"
-- "resumeButton"
 depends-top-level:
-- !private "%"
-- "Set"
+- !private "UIAlertAction"
+- "Timer"
+- "Array"
 - "UIViewController"
-- !private "UIAlertController"
-- !private ">"
-- !private "UnicodeScalarType"
-- !private "UIAlertActionStyle"
+- "UIDatePicker"
+- "UInt32"
 - !private "&&"
-- !private "String"
+- !private "BooleanLiteralType"
+- !private "UIAlertControllerStyle"
+- "UINavigationItem"
+- "Int"
+- "DateFormatter"
+- !private ">="
+- "Set"
+- "UIButton"
 - "Date"
+- !private "StringLiteralType"
 - !private "AudioServicesPlaySystemSound"
+- !private "UIApplication"
 - "AssignmentPrecedence"
 - !private "=="
-- "CastingPrecedence"
-- "DateFormatter"
-- !private "UIAlertAction"
-- !private "UIAlertControllerStyle"
-- "UIButton"
-- "Calendar"
 - "UILabel"
-- "Int"
-- !private "UIApplication"
-- !private "StringLiteralType"
-- "Array"
-- !private "BooleanLiteralType"
-- "Timer"
-- !private "-"
-- "UInt32"
-- "UIDatePicker"
+- "UIToolbar"
+- !private "String"
+- !private "UITapGestureRecognizer"
+- "CastingPrecedence"
+- !private "UnicodeScalarType"
 - "ViewController"
+- !private "UIAlertActionStyle"
 - "NSDate"
 - !private "/"
-- !private "UITapGestureRecognizer"
-- !private ">="
+- !private "-"
+- "Calendar"
+- !private "%"
+- !private "UIAlertController"
 depends-member:
 - !private ["Ps9AnyObject", "AudioServicesPlaySystemSound"]
 - ["Ps9AnyObject", "Calendar"]
@@ -93,10 +96,12 @@ depends-member:
 - ["Ps9AnyObject", "endTime"]
 - !private ["Ps9AnyObject", "fire"]
 - ["Ps9AnyObject", "formatter"]
+- !private ["Ps9AnyObject", "hidesBackButton"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "invalidate"]
 - !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "isIdleTimerDisabled"]
+- ["Ps9AnyObject", "navigationBar"]
 - ["Ps9AnyObject", "pauseButton"]
 - ["Ps9AnyObject", "pauseCountdown"]
 - ["Ps9AnyObject", "playSound"]
@@ -117,6 +122,7 @@ depends-member:
 - ["Ps9AnyObject", "timeIntervalLabel"]
 - ["Ps9AnyObject", "timePaused"]
 - ["Ps9AnyObject", "timer"]
+- ["Ps9AnyObject", "toolbar"]
 - ["Ps9AnyObject", "totalTimeInput"]
 - ["Ps9AnyObject", "totalTimeLabel"]
 - ["Ps9AnyObject", "userCalendar"]
@@ -191,10 +197,12 @@ depends-member:
 - ["Ps7CVarArg", "endTime"]
 - !private ["Ps7CVarArg", "fire"]
 - ["Ps7CVarArg", "formatter"]
+- !private ["Ps7CVarArg", "hidesBackButton"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "invalidate"]
 - !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "isIdleTimerDisabled"]
+- ["Ps7CVarArg", "navigationBar"]
 - ["Ps7CVarArg", "pauseButton"]
 - ["Ps7CVarArg", "pauseCountdown"]
 - ["Ps7CVarArg", "playSound"]
@@ -216,6 +224,7 @@ depends-member:
 - ["Ps7CVarArg", "timeIntervalLabel"]
 - ["Ps7CVarArg", "timePaused"]
 - ["Ps7CVarArg", "timer"]
+- ["Ps7CVarArg", "toolbar"]
 - ["Ps7CVarArg", "totalTimeInput"]
 - ["Ps7CVarArg", "totalTimeLabel"]
 - ["Ps7CVarArg", "userCalendar"]
@@ -282,12 +291,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "endTime"]
 - !private ["Ps28CustomDebugStringConvertible", "fire"]
 - ["Ps28CustomDebugStringConvertible", "formatter"]
+- !private ["Ps28CustomDebugStringConvertible", "hidesBackButton"]
 - !private ["Ps28CustomDebugStringConvertible", "hour"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "invalidate"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "isIdleTimerDisabled"]
 - !private ["Ps28CustomDebugStringConvertible", "minute"]
+- ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - ["Ps28CustomDebugStringConvertible", "pauseButton"]
 - ["Ps28CustomDebugStringConvertible", "pauseCountdown"]
 - ["Ps28CustomDebugStringConvertible", "playSound"]
@@ -310,6 +321,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "timeIntervalLabel"]
 - ["Ps28CustomDebugStringConvertible", "timePaused"]
 - ["Ps28CustomDebugStringConvertible", "timer"]
+- ["Ps28CustomDebugStringConvertible", "toolbar"]
 - ["Ps28CustomDebugStringConvertible", "totalTimeInput"]
 - ["Ps28CustomDebugStringConvertible", "totalTimeLabel"]
 - ["Ps28CustomDebugStringConvertible", "userCalendar"]
@@ -377,12 +389,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "endTime"]
 - !private ["Ps23CustomStringConvertible", "fire"]
 - ["Ps23CustomStringConvertible", "formatter"]
+- !private ["Ps23CustomStringConvertible", "hidesBackButton"]
 - !private ["Ps23CustomStringConvertible", "hour"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "invalidate"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "isIdleTimerDisabled"]
 - !private ["Ps23CustomStringConvertible", "minute"]
+- ["Ps23CustomStringConvertible", "navigationBar"]
 - ["Ps23CustomStringConvertible", "pauseButton"]
 - ["Ps23CustomStringConvertible", "pauseCountdown"]
 - ["Ps23CustomStringConvertible", "playSound"]
@@ -405,6 +419,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "timeIntervalLabel"]
 - ["Ps23CustomStringConvertible", "timePaused"]
 - ["Ps23CustomStringConvertible", "timer"]
+- ["Ps23CustomStringConvertible", "toolbar"]
 - ["Ps23CustomStringConvertible", "totalTimeInput"]
 - ["Ps23CustomStringConvertible", "totalTimeLabel"]
 - ["Ps23CustomStringConvertible", "userCalendar"]
@@ -471,6 +486,7 @@ depends-member:
 - ["Ps9Equatable", "endTime"]
 - !private ["Ps9Equatable", "fire"]
 - ["Ps9Equatable", "formatter"]
+- !private ["Ps9Equatable", "hidesBackButton"]
 - ["Ps9Equatable", "hour"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "invalidate"]
@@ -478,6 +494,7 @@ depends-member:
 - !private ["Ps9Equatable", "isIdleTimerDisabled"]
 - ["Ps9Equatable", "minute"]
 - ["Ps9Equatable", "month"]
+- ["Ps9Equatable", "navigationBar"]
 - ["Ps9Equatable", "pauseButton"]
 - ["Ps9Equatable", "pauseCountdown"]
 - ["Ps9Equatable", "playSound"]
@@ -499,6 +516,7 @@ depends-member:
 - ["Ps9Equatable", "timeIntervalLabel"]
 - ["Ps9Equatable", "timePaused"]
 - ["Ps9Equatable", "timer"]
+- ["Ps9Equatable", "toolbar"]
 - ["Ps9Equatable", "totalTimeInput"]
 - ["Ps9Equatable", "totalTimeLabel"]
 - ["Ps9Equatable", "userCalendar"]
@@ -564,6 +582,7 @@ depends-member:
 - ["Ps8Hashable", "endTime"]
 - !private ["Ps8Hashable", "fire"]
 - ["Ps8Hashable", "formatter"]
+- !private ["Ps8Hashable", "hidesBackButton"]
 - ["Ps8Hashable", "hour"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "invalidate"]
@@ -571,6 +590,7 @@ depends-member:
 - !private ["Ps8Hashable", "isIdleTimerDisabled"]
 - ["Ps8Hashable", "minute"]
 - ["Ps8Hashable", "month"]
+- ["Ps8Hashable", "navigationBar"]
 - ["Ps8Hashable", "pauseButton"]
 - ["Ps8Hashable", "pauseCountdown"]
 - ["Ps8Hashable", "playSound"]
@@ -592,6 +612,7 @@ depends-member:
 - ["Ps8Hashable", "timeIntervalLabel"]
 - ["Ps8Hashable", "timePaused"]
 - ["Ps8Hashable", "timer"]
+- ["Ps8Hashable", "toolbar"]
 - ["Ps8Hashable", "totalTimeInput"]
 - ["Ps8Hashable", "totalTimeLabel"]
 - ["Ps8Hashable", "userCalendar"]
@@ -672,8 +693,10 @@ depends-member:
 - !private ["PSo8NSCoding", "endEditing"]
 - ["PSo8NSCoding", "endTime"]
 - ["PSo8NSCoding", "formatter"]
+- !private ["PSo8NSCoding", "hidesBackButton"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isHidden"]
+- ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "pauseButton"]
 - ["PSo8NSCoding", "pauseCountdown"]
 - ["PSo8NSCoding", "playSound"]
@@ -692,6 +715,7 @@ depends-member:
 - ["PSo8NSCoding", "timeIntervalLabel"]
 - ["PSo8NSCoding", "timePaused"]
 - ["PSo8NSCoding", "timer"]
+- ["PSo8NSCoding", "toolbar"]
 - ["PSo8NSCoding", "totalTimeInput"]
 - ["PSo8NSCoding", "totalTimeLabel"]
 - ["PSo8NSCoding", "userCalendar"]
@@ -724,6 +748,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "endTime"]
 - ["PSo26NSExtensionRequestHandling", "formatter"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - ["PSo26NSExtensionRequestHandling", "pauseButton"]
 - ["PSo26NSExtensionRequestHandling", "pauseCountdown"]
 - ["PSo26NSExtensionRequestHandling", "playSound"]
@@ -741,6 +766,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "timeIntervalLabel"]
 - ["PSo26NSExtensionRequestHandling", "timePaused"]
 - ["PSo26NSExtensionRequestHandling", "timer"]
+- ["PSo26NSExtensionRequestHandling", "toolbar"]
 - ["PSo26NSExtensionRequestHandling", "totalTimeInput"]
 - ["PSo26NSExtensionRequestHandling", "totalTimeLabel"]
 - ["PSo26NSExtensionRequestHandling", "userCalendar"]
@@ -765,7 +791,9 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIDatePicker"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UINavigationItem"]
 - !private ["CSo8NSObject", "UITapGestureRecognizer"]
+- ["CSo8NSObject", "UIToolbar"]
 - ["CSo8NSObject", "UInt32"]
 - !private ["CSo8NSObject", "ViewController"]
 - !private ["CSo8NSObject", "addAction"]
@@ -780,10 +808,12 @@ depends-member:
 - ["CSo8NSObject", "endTime"]
 - !private ["CSo8NSObject", "fire"]
 - ["CSo8NSObject", "formatter"]
+- !private ["CSo8NSObject", "hidesBackButton"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "invalidate"]
 - !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "isIdleTimerDisabled"]
+- ["CSo8NSObject", "navigationBar"]
 - ["CSo8NSObject", "pauseButton"]
 - ["CSo8NSObject", "pauseCountdown"]
 - ["CSo8NSObject", "playSound"]
@@ -804,6 +834,7 @@ depends-member:
 - ["CSo8NSObject", "timeIntervalLabel"]
 - ["CSo8NSObject", "timePaused"]
 - ["CSo8NSObject", "timer"]
+- ["CSo8NSObject", "toolbar"]
 - ["CSo8NSObject", "totalTimeInput"]
 - ["CSo8NSObject", "totalTimeLabel"]
 - ["CSo8NSObject", "userCalendar"]
@@ -836,10 +867,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "endTime"]
 - !private ["PSo16NSObjectProtocol", "fire"]
 - ["PSo16NSObjectProtocol", "formatter"]
+- !private ["PSo16NSObjectProtocol", "hidesBackButton"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "invalidate"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "isIdleTimerDisabled"]
+- ["PSo16NSObjectProtocol", "navigationBar"]
 - ["PSo16NSObjectProtocol", "pauseButton"]
 - ["PSo16NSObjectProtocol", "pauseCountdown"]
 - ["PSo16NSObjectProtocol", "playSound"]
@@ -860,6 +893,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "timeIntervalLabel"]
 - ["PSo16NSObjectProtocol", "timePaused"]
 - ["PSo16NSObjectProtocol", "timer"]
+- ["PSo16NSObjectProtocol", "toolbar"]
 - ["PSo16NSObjectProtocol", "totalTimeInput"]
 - ["PSo16NSObjectProtocol", "totalTimeLabel"]
 - ["PSo16NSObjectProtocol", "userCalendar"]
@@ -996,6 +1030,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "formatter"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
+- ["PSo21UIAppearanceContainer", "navigationBar"]
 - ["PSo21UIAppearanceContainer", "pauseButton"]
 - ["PSo21UIAppearanceContainer", "pauseCountdown"]
 - ["PSo21UIAppearanceContainer", "playSound"]
@@ -1014,6 +1049,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "timeIntervalLabel"]
 - ["PSo21UIAppearanceContainer", "timePaused"]
 - ["PSo21UIAppearanceContainer", "timer"]
+- ["PSo21UIAppearanceContainer", "toolbar"]
 - ["PSo21UIAppearanceContainer", "totalTimeInput"]
 - ["PSo21UIAppearanceContainer", "totalTimeLabel"]
 - ["PSo21UIAppearanceContainer", "userCalendar"]
@@ -1023,6 +1059,7 @@ depends-member:
 - ["CSo13UIApplication", "deinit"]
 - !private ["CSo13UIApplication", "isIdleTimerDisabled"]
 - !private ["CSo13UIApplication", "shared"]
+- !private ["PSo16UIBarPositioning", "isHidden"]
 - !private ["CSo8UIButton", "isHidden"]
 - !private ["PSo18UIContentContainer", "AudioServicesPlaySystemSound"]
 - ["PSo18UIContentContainer", "Calendar"]
@@ -1046,6 +1083,7 @@ depends-member:
 - ["PSo18UIContentContainer", "endTime"]
 - ["PSo18UIContentContainer", "formatter"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "navigationBar"]
 - ["PSo18UIContentContainer", "pauseButton"]
 - ["PSo18UIContentContainer", "pauseCountdown"]
 - ["PSo18UIContentContainer", "playSound"]
@@ -1063,6 +1101,7 @@ depends-member:
 - ["PSo18UIContentContainer", "timeIntervalLabel"]
 - ["PSo18UIContentContainer", "timePaused"]
 - ["PSo18UIContentContainer", "timer"]
+- ["PSo18UIContentContainer", "toolbar"]
 - ["PSo18UIContentContainer", "totalTimeInput"]
 - ["PSo18UIContentContainer", "totalTimeLabel"]
 - ["PSo18UIContentContainer", "userCalendar"]
@@ -1111,6 +1150,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "formatter"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
+- ["PSo18UIFocusEnvironment", "navigationBar"]
 - ["PSo18UIFocusEnvironment", "pauseButton"]
 - ["PSo18UIFocusEnvironment", "pauseCountdown"]
 - ["PSo18UIFocusEnvironment", "playSound"]
@@ -1129,6 +1169,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "timeIntervalLabel"]
 - ["PSo18UIFocusEnvironment", "timePaused"]
 - ["PSo18UIFocusEnvironment", "timer"]
+- ["PSo18UIFocusEnvironment", "toolbar"]
 - ["PSo18UIFocusEnvironment", "totalTimeInput"]
 - ["PSo18UIFocusEnvironment", "totalTimeLabel"]
 - ["PSo18UIFocusEnvironment", "userCalendar"]
@@ -1144,6 +1185,7 @@ depends-member:
 - !private ["CSo19UIGestureRecognizer", "init"]
 - !private ["CSo7UILabel", "isHidden"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo16UINavigationItem", "hidesBackButton"]
 - !private ["CSo11UIResponder", "AudioServicesPlaySystemSound"]
 - ["CSo11UIResponder", "Calendar"]
 - ["CSo11UIResponder", "Date"]
@@ -1161,7 +1203,9 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIDatePicker"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UINavigationItem"]
 - !private ["CSo11UIResponder", "UITapGestureRecognizer"]
+- ["CSo11UIResponder", "UIToolbar"]
 - ["CSo11UIResponder", "UInt32"]
 - !private ["CSo11UIResponder", "ViewController"]
 - !private ["CSo11UIResponder", "addAction"]
@@ -1176,6 +1220,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "isIdleTimerDisabled"]
+- ["CSo11UIResponder", "navigationBar"]
 - ["CSo11UIResponder", "pauseButton"]
 - ["CSo11UIResponder", "pauseCountdown"]
 - ["CSo11UIResponder", "playSound"]
@@ -1195,6 +1240,7 @@ depends-member:
 - ["CSo11UIResponder", "timeIntervalLabel"]
 - ["CSo11UIResponder", "timePaused"]
 - ["CSo11UIResponder", "timer"]
+- ["CSo11UIResponder", "toolbar"]
 - ["CSo11UIResponder", "totalTimeInput"]
 - ["CSo11UIResponder", "totalTimeLabel"]
 - ["CSo11UIResponder", "userCalendar"]
@@ -1227,6 +1273,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "isIdleTimerDisabled"]
+- ["PSo30UIResponderStandardEditActions", "navigationBar"]
 - ["PSo30UIResponderStandardEditActions", "pauseButton"]
 - ["PSo30UIResponderStandardEditActions", "pauseCountdown"]
 - ["PSo30UIResponderStandardEditActions", "playSound"]
@@ -1246,6 +1293,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "timeIntervalLabel"]
 - ["PSo30UIResponderStandardEditActions", "timePaused"]
 - ["PSo30UIResponderStandardEditActions", "timer"]
+- ["PSo30UIResponderStandardEditActions", "toolbar"]
 - ["PSo30UIResponderStandardEditActions", "totalTimeInput"]
 - ["PSo30UIResponderStandardEditActions", "totalTimeLabel"]
 - ["PSo30UIResponderStandardEditActions", "userCalendar"]
@@ -1274,6 +1322,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "endTime"]
 - ["PSo16UIStateRestoring", "formatter"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "navigationBar"]
 - ["PSo16UIStateRestoring", "pauseButton"]
 - ["PSo16UIStateRestoring", "pauseCountdown"]
 - ["PSo16UIStateRestoring", "playSound"]
@@ -1291,6 +1340,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "timeIntervalLabel"]
 - ["PSo16UIStateRestoring", "timePaused"]
 - ["PSo16UIStateRestoring", "timer"]
+- ["PSo16UIStateRestoring", "toolbar"]
 - ["PSo16UIStateRestoring", "totalTimeInput"]
 - ["PSo16UIStateRestoring", "totalTimeLabel"]
 - ["PSo16UIStateRestoring", "userCalendar"]
@@ -1300,6 +1350,7 @@ depends-member:
 - !private ["CSo22UITapGestureRecognizer", "cancelsTouchesInView"]
 - ["CSo22UITapGestureRecognizer", "deinit"]
 - !private ["CSo22UITapGestureRecognizer", "init"]
+- !private ["CSo9UIToolbar", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "AudioServicesPlaySystemSound"]
 - ["PSo18UITraitEnvironment", "Calendar"]
 - !private ["PSo18UITraitEnvironment", "Date"]
@@ -1326,6 +1377,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "formatter"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
+- ["PSo18UITraitEnvironment", "navigationBar"]
 - ["PSo18UITraitEnvironment", "pauseButton"]
 - ["PSo18UITraitEnvironment", "pauseCountdown"]
 - ["PSo18UITraitEnvironment", "playSound"]
@@ -1344,6 +1396,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "timeIntervalLabel"]
 - ["PSo18UITraitEnvironment", "timePaused"]
 - ["PSo18UITraitEnvironment", "timer"]
+- ["PSo18UITraitEnvironment", "toolbar"]
 - ["PSo18UITraitEnvironment", "totalTimeInput"]
 - ["PSo18UITraitEnvironment", "totalTimeLabel"]
 - ["PSo18UITraitEnvironment", "userCalendar"]
@@ -1372,7 +1425,9 @@ depends-member:
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIDatePicker"]
 - ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UINavigationItem"]
 - !private ["CSo16UIViewController", "UITapGestureRecognizer"]
+- ["CSo16UIViewController", "UIToolbar"]
 - ["CSo16UIViewController", "UInt32"]
 - !private ["CSo16UIViewController", "ViewController"]
 - !private ["CSo16UIViewController", "addAction"]
@@ -1383,6 +1438,7 @@ depends-member:
 - ["CSo16UIViewController", "endTime"]
 - ["CSo16UIViewController", "formatter"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "navigationBar"]
 - ["CSo16UIViewController", "pauseButton"]
 - ["CSo16UIViewController", "pauseCountdown"]
 - ["CSo16UIViewController", "playSound"]
@@ -1400,6 +1456,7 @@ depends-member:
 - ["CSo16UIViewController", "timeIntervalLabel"]
 - ["CSo16UIViewController", "timePaused"]
 - ["CSo16UIViewController", "timer"]
+- ["CSo16UIViewController", "toolbar"]
 - ["CSo16UIViewController", "totalTimeInput"]
 - ["CSo16UIViewController", "totalTimeLabel"]
 - ["CSo16UIViewController", "userCalendar"]
@@ -1432,7 +1489,9 @@ depends-member:
 - ["C13Workout_Clock14ViewController", "UIButton"]
 - ["C13Workout_Clock14ViewController", "UIDatePicker"]
 - ["C13Workout_Clock14ViewController", "UILabel"]
+- ["C13Workout_Clock14ViewController", "UINavigationItem"]
 - !private ["C13Workout_Clock14ViewController", "UITapGestureRecognizer"]
+- ["C13Workout_Clock14ViewController", "UIToolbar"]
 - ["C13Workout_Clock14ViewController", "UInt32"]
 - !private ["C13Workout_Clock14ViewController", "ViewController"]
 - ["C13Workout_Clock14ViewController", "clockLabel"]
@@ -1442,6 +1501,7 @@ depends-member:
 - ["C13Workout_Clock14ViewController", "endTime"]
 - ["C13Workout_Clock14ViewController", "formatter"]
 - ["C13Workout_Clock14ViewController", "init"]
+- ["C13Workout_Clock14ViewController", "navigationBar"]
 - ["C13Workout_Clock14ViewController", "pauseButton"]
 - ["C13Workout_Clock14ViewController", "pauseCountdown"]
 - ["C13Workout_Clock14ViewController", "playSound"]
@@ -1459,6 +1519,7 @@ depends-member:
 - ["C13Workout_Clock14ViewController", "timeIntervalLabel"]
 - ["C13Workout_Clock14ViewController", "timePaused"]
 - ["C13Workout_Clock14ViewController", "timer"]
+- ["C13Workout_Clock14ViewController", "toolbar"]
 - ["C13Workout_Clock14ViewController", "totalTimeInput"]
 - ["C13Workout_Clock14ViewController", "totalTimeLabel"]
 - ["C13Workout_Clock14ViewController", "userCalendar"]
@@ -1525,6 +1586,7 @@ depends-member:
 - ["Ps9_Hashable", "endTime"]
 - !private ["Ps9_Hashable", "fire"]
 - ["Ps9_Hashable", "formatter"]
+- !private ["Ps9_Hashable", "hidesBackButton"]
 - ["Ps9_Hashable", "hour"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "invalidate"]
@@ -1532,6 +1594,7 @@ depends-member:
 - !private ["Ps9_Hashable", "isIdleTimerDisabled"]
 - ["Ps9_Hashable", "minute"]
 - ["Ps9_Hashable", "month"]
+- ["Ps9_Hashable", "navigationBar"]
 - ["Ps9_Hashable", "pauseButton"]
 - ["Ps9_Hashable", "pauseCountdown"]
 - ["Ps9_Hashable", "playSound"]
@@ -1553,6 +1616,7 @@ depends-member:
 - ["Ps9_Hashable", "timeIntervalLabel"]
 - ["Ps9_Hashable", "timePaused"]
 - ["Ps9_Hashable", "timer"]
+- ["Ps9_Hashable", "toolbar"]
 - ["Ps9_Hashable", "totalTimeInput"]
 - ["Ps9_Hashable", "totalTimeLabel"]
 - ["Ps9_Hashable", "userCalendar"]
@@ -1596,7 +1660,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "minute"]
 - !private ["Ps21_ObjectiveCBridgeable", "second"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
@@ -1696,6 +1759,7 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo13UIApplication"
+- !private "PSo16UIBarPositioning"
 - !private "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
@@ -1707,10 +1771,12 @@ depends-nominal:
 - !private "PSo11UIFocusItem"
 - !private "CSo19UIGestureRecognizer"
 - !private "CSo7UILabel"
+- !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "CSo22UITapGestureRecognizer"
+- !private "CSo9UIToolbar"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
@@ -1738,7 +1804,6 @@ depends-nominal:
 - !private "Ps18_IntegerArithmetic"
 - "P10Foundation14_MutableBoxing"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
@@ -1756,4 +1821,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "78d33e1533a4092b73e795a043df2483"
+interface-hash: "ead62252b04540476845549f60482c56"

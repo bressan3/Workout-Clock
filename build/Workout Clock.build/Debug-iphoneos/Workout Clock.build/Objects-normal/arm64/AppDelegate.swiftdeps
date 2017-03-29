@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C13Workout_Clock11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
 - "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
-- "applicationWillResignActive"
-- "window"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
+- "application"
+- "applicationWillTerminate"
+- "window"
+- "applicationWillResignActive"
 depends-top-level:
-- "UIResponder"
-- !private "BooleanLiteralType"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- "UIApplication"
-- "UIApplicationDelegate"
 - "Bool"
+- "UIResponder"
+- "UIApplication"
 - "UIWindow"
+- !private "BooleanLiteralType"
+- "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
+- "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -259,4 +259,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 interface-hash: "7e85a999868267b7cde0941f4dd635ac"

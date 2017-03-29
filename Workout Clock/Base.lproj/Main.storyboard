@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PiJ-xU-Opg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCE-Af-6Xc">
-                                <rect key="frame" x="273" y="369" width="83" height="30"/>
+                                <rect key="frame" x="258" y="369" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Resume"/>
@@ -75,7 +75,9 @@
                                 <rect key="frame" x="85" y="545" width="210" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Start the Countdown!"/>
+                                <state key="normal" title="Start the Countdown!">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="startCountdown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFh-wo-5EL"/>
                                 </connections>
@@ -96,24 +98,158 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US_POSIX"/>
                             </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Nn-hm-2Pe">
+                                <rect key="frame" x="-3" y="623" width="378" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Save" width="46" id="xKm-Fc-ahW">
+                                        <connections>
+                                            <segue destination="JZd-UF-1c2" kind="show" identifier="GoBackHome" id="wAG-W1-Gjt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="                                                   " width="243" id="HkD-Qu-UGd"/>
+                                    <barButtonItem title="Load" id="vaO-oR-biR">
+                                        <connections>
+                                            <segue destination="Mkd-RM-fY7" kind="show" id="LhN-rA-d9W"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K3y-zp-RMn"/>
                     <connections>
                         <outlet property="clockLabel" destination="RnW-Wv-PEG" id="z7h-vW-j88"/>
+                        <outlet property="navigationBar" destination="K3y-zp-RMn" id="SeF-7f-hCc"/>
                         <outlet property="pauseButton" destination="3W8-0B-d4v" id="S4g-j2-4mp"/>
                         <outlet property="resumeButton" destination="fCE-Af-6Xc" id="mCG-qC-Phr"/>
                         <outlet property="startButton" destination="uOD-S7-ZRD" id="YsP-4a-14z"/>
                         <outlet property="stopButton" destination="uw9-am-CB8" id="icW-MO-GD7"/>
                         <outlet property="timeIntervalInput" destination="avo-Gx-wj0" id="M3k-8w-JjU"/>
                         <outlet property="timeIntervalLabel" destination="vJo-32-IUQ" id="5Ak-kN-X5c"/>
+                        <outlet property="toolbar" destination="9Nn-hm-2Pe" id="KfV-Hy-WEY"/>
                         <outlet property="totalTimeInput" destination="drR-JT-Iv8" id="AKf-m5-pgE"/>
                         <outlet property="totalTimeLabel" destination="t39-ki-iMI" id="4cd-9i-cTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Profile Name View Controller-->
+        <scene sceneID="6Eu-3K-sfe">
+            <objects>
+                <viewController id="JZd-UF-1c2" customClass="ProfileNameViewController" customModule="Workout_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tkL-xL-7Re"/>
+                        <viewControllerLayoutGuide type="bottom" id="s8K-VC-yUg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RHI-AS-PQY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chose a name for your new profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5a-fY-FdZ">
+                                <rect key="frame" x="16" y="97" width="262" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJ9-YI-SSO">
+                                <rect key="frame" x="16" y="126" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrU-5Q-loL">
+                                <rect key="frame" x="172" y="178" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="confirmName:" destination="JZd-UF-1c2" eventType="touchUpInside" id="c2S-jr-WVm"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="M0t-ol-aDV"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You must provide a name before continuing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhg-PD-jyv">
+                                <rect key="frame" x="16" y="68" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="noNameProvidedLabel" destination="Dhg-PD-jyv" id="gDI-Av-N2x"/>
+                        <outlet property="profileNameInput" destination="wJ9-YI-SSO" id="OyS-YY-2fO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75b-f9-7i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="880.20989505247383"/>
+        </scene>
+        <!--Profile Select View Controller-->
+        <scene sceneID="69s-rg-itZ">
+            <objects>
+                <viewController id="Mkd-RM-fY7" customClass="ProfileSelectViewController" customModule="Workout_Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vr0-ol-wv7"/>
+                        <viewControllerLayoutGuide type="bottom" id="0db-wO-Nby"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ga4-Rd-PAy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-R7-Kwg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ByV-oG-LVO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Select a Profile" id="zX5-ZY-0ly"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileTable" destination="9cq-R7-Kwg" id="KSn-Ok-nWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6m-Lv-5yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832.8" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="291-ia-37M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PiJ-xU-Opg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2s7-tP-luS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZW8-Qz-c5m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gge-g7-UFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="M0t-ol-aDV"/>
+    </inferredMetricsTieBreakers>
 </document>

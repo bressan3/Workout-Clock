@@ -12,8 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
 
     
-    // @IBOutlet weak var totalTimeInput: UITextField!
-    // @IBOutlet weak var timeIntervalInput: UITextField!
+    @IBOutlet weak var navigationBar: UINavigationItem!
     
     @IBOutlet weak var totalTimeLabel: UILabel!
     @IBOutlet weak var totalTimeInput: UIDatePicker!
@@ -28,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var resumeButton: UIButton!
     
+    @IBOutlet weak var toolbar: UIToolbar!
     
     let formatter = DateFormatter()
     let userCalendar = Calendar.current;
@@ -62,11 +62,11 @@ class ViewController: UIViewController {
         let timeIntervalInt = timeIntervalInput.countDownDuration / 60
         
         if strHours == "00" && strMinutes == "00" && strSeconds == "00"{
+            // If the clock reached 00:00:00 we play a sound and stop the countdown
             playSound(systemSoundID: 1015)
             stopCountdown(Any.self)
-        } else if (timeIntervalInt > 1.0 && timeDifference.minute! % Int(timeIntervalInt) == 0) {
-            playSound(systemSoundID: 1016)
-        } else if (timeDifference.second == 0) {
+        } else if (timeDifference.minute! % Int(timeIntervalInt) == 0 && timeDifference.second! == 0) {
+            // Based on the interval value chosen by the user, the clock will play a sound whenever this time interval has passed
             playSound(systemSoundID: 1016)
         }
         
@@ -74,7 +74,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startCountdown(_ sender: UIButton) {
+        // The clock can only run if the total time value selected by the user is bigger than the interval time
         if (Int(totalTimeInput.countDownDuration) >= Int(timeIntervalInput.countDownDuration)){
+            // Hides / shows all the stuff we don't need
             totalTimeLabel.isHidden = true
             totalTimeInput.isHidden = true
             timeIntervalLabel.isHidden = true
@@ -83,12 +85,17 @@ class ViewController: UIViewController {
             clockLabel.isHidden = false
             stopButton.isHidden = false
             pauseButton.isHidden = false
+            toolbar.isHidden = true
+            
+            // Keeps the phone from locking the screen
+            UIApplication.shared.isIdleTimerDisabled = true
             
             startTime = NSDate()
             endTime = userCalendar.date(byAdding: .minute, value: Int(totalTimeInput.countDownDuration) / 60, to: startTime as Date)! // endTime = startTime + valueIn(totalTimeInput)
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(printTime), userInfo: nil, repeats: true)
             timer?.fire()
         } else {
+            // An alert is displayed if the user tries to set the interval time value bigger than the total time one
             let alert = UIAlertController(title: "Wrong Total Time!", message: "The total time value must be bigger than the interval value", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -96,6 +103,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopCountdown(_ sender: Any) {
+        // Hides / shows all the stuff we don't need
         totalTimeLabel.isHidden = false
         totalTimeInput.isHidden = false
         timeIntervalLabel.isHidden = false
@@ -105,14 +113,20 @@ class ViewController: UIViewController {
         stopButton.isHidden = true
         pauseButton.isHidden = true
         resumeButton.isHidden = true
+        toolbar.isHidden = false
+        
+        UIApplication.shared.isIdleTimerDisabled = false
         
         timer?.invalidate()
     }
     
     @IBAction func pauseCountdown(_ sender: Any) {
+        UIApplication.shared.isIdleTimerDisabled = false
+        
         let date = Date()
         let calendar = Calendar.current
         
+        // Stores the time when the clock was paused
         timePaused[0] = calendar.component(.hour, from: date)
         timePaused[1] = calendar.component(.minute, from: date)
         timePaused[2] = calendar.component(.second, from: date)
@@ -123,6 +137,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resumeCountdown(_ sender: Any) {
+        // Keeps the phone from locking the screen
+        UIApplication.shared.isIdleTimerDisabled = true
+        
+        // Stores the time when the clock was resumed so it can start running again from when it was stopped by the user
         let date = Date()
         let calendar = Calendar.current
         let timeResumed:[Int] = [calendar.component(.hour, from: date),
@@ -133,6 +151,7 @@ class ViewController: UIViewController {
                              timeResumed[1] - timePaused[1],
                              timeResumed[2] - timePaused[2]]
         
+        // Adds the total waited time to endTime so the clock resumes from where it left of before being paused
         endTime = userCalendar.date(byAdding: .second, value: totalPausedTime[2], to: endTime! as Date)!
         endTime = userCalendar.date(byAdding: .minute, value: totalPausedTime[1], to: endTime! as Date)!
         endTime = userCalendar.date(byAdding: .hour, value: totalPausedTime[0], to: endTime! as Date)!
@@ -155,8 +174,9 @@ class ViewController: UIViewController {
         
         view.addGestureRecognizer(tap)
         
-        // Keeps the phone from locking the screen
-        UIApplication.shared.isIdleTimerDisabled = true
+        UIApplication.shared.isIdleTimerDisabled = false
+        
+        navigationBar.hidesBackButton = true
     }
     
     //Calls this function when the tap is recognized.

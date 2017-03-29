@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "4cb9435c3b633ff8f3527e47b162b0a1"
+build_time: [544143435, 515760000]
+inputs:
+  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/ViewController.swift": [544143418, 0]
+  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/SavedProfilesModel.swift": [541373531, 0]
+  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/ProfileSelectViewController.swift": [541284383, 0]
+  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/AppDelegate.swift": [541215285, 0]
+  "/Users/Lucas/Documents/Github/Workout Clock/Workout Clock/ProfileNameViewController.swift": [541286503, 0]

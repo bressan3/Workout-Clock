@@ -1,0 +1,214 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProfileNameViewController"
+provides-nominal:
+- "C13Workout_Clock25ProfileNameViewController"
+provides-member:
+- ["C13Workout_Clock25ProfileNameViewController", ""]
+provides-dynamic-lookup:
+- "profileNameInput"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "noNameProvidedLabel"
+- "confirmName"
+depends-top-level:
+- "UIViewController"
+- "UITextField"
+- "UIButton"
+- "UILabel"
+- "ProfileNameViewController"
+depends-member:
+- ["Ps9AnyObject", "confirmName"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "noNameProvidedLabel"]
+- ["Ps9AnyObject", "profileNameInput"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "confirmName"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "noNameProvidedLabel"]
+- ["Ps7CVarArg", "profileNameInput"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "confirmName"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "noNameProvidedLabel"]
+- ["Ps28CustomDebugStringConvertible", "profileNameInput"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "confirmName"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "noNameProvidedLabel"]
+- ["Ps23CustomStringConvertible", "profileNameInput"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "confirmName"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "noNameProvidedLabel"]
+- ["Ps9Equatable", "profileNameInput"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "confirmName"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "noNameProvidedLabel"]
+- ["Ps8Hashable", "profileNameInput"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "confirmName"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "noNameProvidedLabel"]
+- ["PSo8NSCoding", "profileNameInput"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "confirmName"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "noNameProvidedLabel"]
+- ["PSo26NSExtensionRequestHandling", "profileNameInput"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "confirmName"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "noNameProvidedLabel"]
+- ["CSo8NSObject", "profileNameInput"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "confirmName"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "noNameProvidedLabel"]
+- ["PSo16NSObjectProtocol", "profileNameInput"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["C13Workout_Clock25ProfileNameViewController", "UIButton"]
+- ["C13Workout_Clock25ProfileNameViewController", "UILabel"]
+- ["C13Workout_Clock25ProfileNameViewController", "UITextField"]
+- ["C13Workout_Clock25ProfileNameViewController", "confirmName"]
+- ["C13Workout_Clock25ProfileNameViewController", "deinit"]
+- ["C13Workout_Clock25ProfileNameViewController", "didReceiveMemoryWarning"]
+- ["C13Workout_Clock25ProfileNameViewController", "init"]
+- ["C13Workout_Clock25ProfileNameViewController", "noNameProvidedLabel"]
+- ["C13Workout_Clock25ProfileNameViewController", "profileNameInput"]
+- ["C13Workout_Clock25ProfileNameViewController", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "confirmName"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "noNameProvidedLabel"]
+- ["PSo21UIAppearanceContainer", "profileNameInput"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "confirmName"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "noNameProvidedLabel"]
+- ["PSo18UIContentContainer", "profileNameInput"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "confirmName"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "noNameProvidedLabel"]
+- ["PSo18UIFocusEnvironment", "profileNameInput"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "confirmName"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "noNameProvidedLabel"]
+- ["CSo11UIResponder", "profileNameInput"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "confirmName"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "noNameProvidedLabel"]
+- ["PSo30UIResponderStandardEditActions", "profileNameInput"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo16UIStateRestoring", "confirmName"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "noNameProvidedLabel"]
+- ["PSo16UIStateRestoring", "profileNameInput"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "confirmName"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "noNameProvidedLabel"]
+- ["PSo18UITraitEnvironment", "profileNameInput"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "confirmName"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "noNameProvidedLabel"]
+- ["CSo16UIViewController", "profileNameInput"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["Ps9_Hashable", "confirmName"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "noNameProvidedLabel"]
+- ["Ps9_Hashable", "profileNameInput"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "C13Workout_Clock25ProfileNameViewController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+interface-hash: "4f17fad11c98392ec4707ad28e27f42d"

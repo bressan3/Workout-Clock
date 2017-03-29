@@ -136,30 +136,66 @@ SWIFT_CLASS("_TtC13Workout_Clock11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSDateFormatter;
-@class NSDate;
-@class NSTimer;
 @class UIButton;
 @class UITextField;
 @class UILabel;
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC13Workout_Clock25ProfileNameViewController")
+@interface ProfileNameViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified profileNameInput;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified noNameProvidedLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)confirmName:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC13Workout_Clock27ProfileSelectViewController")
+@interface ProfileSelectViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified profileTable;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDateFormatter;
+@class NSDate;
+@class NSTimer;
+@class UINavigationItem;
+@class UIDatePicker;
+@class UIToolbar;
+
 SWIFT_CLASS("_TtC13Workout_Clock14ViewController")
 @interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified totalTimeInput;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified timeIntervalInput;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified totalTimeLabel;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified totalTimeInput;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeIntervalLabel;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified timeIntervalInput;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified clockLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified stopButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified pauseButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified resumeButton;
+@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified toolbar;
 @property (nonatomic, readonly, strong) NSDateFormatter * _Nonnull formatter;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull userCalendar;
 @property (nonatomic, strong) NSDate * _Nonnull startTime;
 @property (nonatomic, copy) NSDate * _Nullable endTime;
 @property (nonatomic, strong) NSTimer * _Nullable timer;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull timePaused;
+- (void)playSoundWithSystemSoundID:(uint32_t)systemSoundID;
 - (void)printTime;
 - (IBAction)startCountdown:(UIButton * _Nonnull)sender;
 - (IBAction)stopCountdown:(id _Nonnull)sender;
+- (IBAction)pauseCountdown:(id _Nonnull)sender;
+- (IBAction)resumeCountdown:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)dismissKeyboard;
 - (void)didReceiveMemoryWarning;
